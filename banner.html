@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="como fazer um banner rotativo em html - puro HTML, CSS e JavaScript">
+  <meta property="og:title" content="Website" />
+  <meta property="og:type" content="Como criar banner rotativo e auto- slide usando HTML, CSS e JavaScript." />
+  <meta property="og:description" content="Codigo como criar um banner rotativo automático usando HTML, CSS e JavaScript" />
+  <link rel="preload" href="https://static.codepen.io/assets/embed/ei.js" as="script">
+  <title>banner rotativo em html</title>
+  <link rel="stylesheet" href="./banner/style.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class=" ban">
+    <div class="container">
+      <a href="index.html" class="grid-4">
+        <img src="img/mauro.png" alt="Mauro">
+      </a>
+      <nav class="header_menu grid-12">
+        <ul>
+          <li><a href="index.html#produto">Produto</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+          <li><a href="banner.html">Banner</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section>
+    <div id="moldura">
+      <input id="ant" type="button" value="<" onclick="prox(-1)" />
+      <input id="pos" type="button" value=">" onclick="prox(1)" />
+    </div>
+
+    <div id="codepen">
+      <p class="codepen" data-height="450" data-theme-id="dark" data-default-tab="html,result" data-user="mauroborgesjunior" data-slug-hash="BaKmvWa" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Banner auto com botão">
+        <span>See the Pen <a href="https://codepen.io/mauroborgesjunior/pen/BaKmvWa">
+            Banner auto com botão</a> by Mauro Borges Junior (<a href="https://codepen.io/mauroborgesjunior">@mauroborgesjunior</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+    </div>
+    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+  </section>
+
+
+  <!-- Link whatsapp -->
+  <p id="redes"><a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511964393306&text=Olá,%20gostaria %20de %20saber%20mais%20sobre%20o%20site" target=”_blank"><img src="https://i.imgur.com/ryESuZ5.png" style="height:70px; position:fixed; bottom: 15px; right: 70px; z-index:99999;" data-selector="img"></a></p>
+
+  </footer>
+
+  <script src="./banner/script.js"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-177295719-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</body>
+
+</html>

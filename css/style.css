@@ -54,12 +54,10 @@ h3 {
 }
 /* Header*/
 .header {
-  position: fixed;
   top: 0;
   width: 100%;
   background: #fec63e;
   padding: 20px 0;
-  z-index: 200;
 }
 .header_menu {
   text-align: right;
@@ -89,9 +87,9 @@ h3 {
 .introducao {
   width: 100%;
   height: 460px;
-  background: url("./img/bg-intro.png") no-repeat center;
+  background: url("../img/bg-intro.png") no-repeat center;
   background-size: cover;
-  margin-top: 100px;
+
   text-align: center;
   padding-top: 3.75em;
 }
@@ -244,9 +242,15 @@ h3 {
 .contato .subtitulo::after {
   background: #fec63e;
 }
-.contato img {
-  margin-bottom: 30px;
-  display: inline-block;
+#redes a img {
+  display: inline;
+
+  filter: grayscale(1) drop-shadow(0 0 0 rgba(0, 0, 0, 0.25));
+  transition-duration: 100ms;
+}
+#redes a:hover img {
+  filter: grayscale(0) drop-shadow(0.25em 0.25em 0.125em rgba(0, 0, 0, 0.25));
+  transform: translate(-0.125em, -0.125em);
 }
 .contato h3 {
   padding-top: 20px;
@@ -261,6 +265,7 @@ h3 {
   margin: 10px 0;
 }
 .dados a {
+  margin-top: 25px;
   color: #fff;
   font-size: 18px;
   line-height: 22px;
